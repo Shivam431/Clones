@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Roboto&family=Tiro+Devanagari+Hindi&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins&family=Roboto&family=Tiro+Devanagari+Hindi&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Martel Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Tiro Devanagari Hindi", serif;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assests/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  position: relative;
+}
+
+.container .box {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  max-width: 80vw;
+  justify-content: space-between;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+nav img {
+  position: relative;
+  top: 30px;
+  width: 9.25rem;
+  height: 2.5rem;
+  position: absolute;
+  z-index: 10;
+}
+
+.lang {
+  background-color: transparent;
+  border: 2px solid white;
+  height: 32px;
+  width: 123px;
+  /* border-radius: 5px; */
+  margin-right: 18px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  z-index: 10;
+}
+
+.sign {
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  height: 2rem;
+  width: auto;
+  padding: 0.25rem 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.content {
+  position: relative;
+  top: 100px;
+  /* background-color: red; */
+  z-index: 10;
+  color: wheat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Martel Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Tiro Devanagari Hindi", serif;
+  padding: 30px;
+  gap: 20px;
+}
+
+.content :first-child {
+  font-weight: 900;
+  text-align: center;
+  font-size: 48px;
+}
+
+.content :nth-child(2) {
+  text-align: center;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.content :nth-child(3) {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* .content span {
+  font-size: larger;
+  font-weight: 900;
+  line-height: 50px;
+  font-size: 28px;
+} */
+
+.user-register {
+  position: relative;
+  display: flex;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  top: 50px;
+  margin-top: 30px;
+}
+
+.user-register input {
+  position: relative;
+  margin-top: 30px;
+  left: 1px;
+  width: 364px;
+  height: 45px;
+  border: none;
+  border: 2px solid white;
+  background-color: grey;
+  opacity: 0.4;
+  border-radius: 3px;
+  color: white;
+  z-index: 13;
+}
+
+.user-register button {
+  position: relative;
+  left: 8px;
+  /*width: 216px;
+    height: 45px;
+    */
+  margin-top: 30px;
+  background-color: red;
+  border: none;
+  padding: 9px;
+  text-align: center;
+  color: white;
+  font-size: 23px;
+  border-radius: 3px;
+}
+
+/* hr {
+  background-color: rgba(39, 38, 38, 0.925);
+  height: 10px;
+  border: none;
+} */
+
+/* .second-page {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+} */
+
+.line {
+  height: 20px;
+  background-color: grey;
+}
+
+.first {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  color: white;
+  max-width: 70vw;
+  align-items: center;
+  font-family: "Martel Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Tiro Devanagari Hindi", serif;
+  height: 100vh;
+}
+
+.secImg {
+  position: relative;
+}
+.secImg img {
+  position: relative;
+  width: 40vw;
+  top: 100px;
+  z-index: 13;
+}
+
+.secImg video {
+  position: relative;
+  /* right: 0;
+    top: 51px; */
+  right: -46px;
+  top: -230px;
+  z-index: 10;
+  height: 40vh;
+}
+
+.first h1 {
+  position: relative;
+  top: -70px;
+  font-weight: 900;
+  text-align: left;
+  font-size: 38px;
+}
+
+.first h2 {
+  text-align: left;
+  position: relative;
+  top: -50px;
+  font-weight: 900;
+  /* text-align: center; */
+  font-size: 18px;
+}
+
+.second {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  color: white;
+  max-width: 70vw;
+  align-items: center;
+  font-family: "Martel Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Tiro Devanagari Hindi", serif;
+  height: 100vh;
+}
+.secImg-2 {
+  position: relative;
+}
+
+.secImg-2 img {
+  position: relative;
+  width: 40vw;
+  top: 0px;
+  height: 5%;
+}
+
+.block {
+  position: relative;
+  height: 15vh;
+  width: 20vw;
+  z-index: 13;
+  top: -140px;
+  right: -138px;
+  border: 2px solid white;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  background-color: black;
+}
+
+.block img {
+  height: 90px;
+  width: 100px;
+  position: relative;
+  object-fit: contain;
+  left: 0;
+  padding: 5px;
+}
+
+.second h1 {
+  position: relative;
+  top: -70px;
+  font-weight: 900;
+  text-align: left;
+  font-size: 38px;
+}
+
+.second h2 {
+  text-align: left;
+  position: relative;
+  top: -50px;
+  font-weight: 900;
+  /* text-align: center; */
+  font-size: 18px;
+}
+
+
+
+
+
+.third {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    max-width: 70vw;
+    align-items: center;
+    font-family: "Martel Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Tiro Devanagari Hindi", serif;
+    height: 100vh;
+  }
+  
+  .secImg-3{
+    position: relative;
+    top: 20px;
+}
+
+  .secImg-3 img {
+    position: relative;
+    width: 40vw;
+    top: 100px;
+    z-index: 13;
+  }
+  
+  .secImg-3 video {
+    position: relative;
+    /* right: 0;
+      top: 51px; */
+    right: -110px;
+    top: -270px;
+    z-index: 10;
+    height: 12rem;
+  }
+  
+  .third h1 {
+    position: relative;
+    top: -70px;
+    font-weight: 900;
+    text-align: left;
+    font-size: 38px;
+  }
+  
+  .third h2 {
+    text-align: left;
+    position: relative;
+    top: -50px;
+    font-weight: 900;
+    /* text-align: center; */
+    font-size: 18px;
+  }
+  
