@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="utility.css" />
   </head>
@@ -32,6 +33,13 @@
             <img class="invert" src="./assests/playlist.svg" alt="playlist" />
             <h2>Your Library</h2>
           </div>
+
+          <!-- list all the songs in library -->
+          <div class="songsList">
+            <ul>
+            </ul>
+          </div>
+          <!-- display footer -->
           <div class="footer">
             <div>
               <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
@@ -64,71 +72,110 @@
           </div>
         </div>
       </div>
-      <div class="right bg-grey  rounded">
-        <div class="header">
 
-            <div class="nav">
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                class="injected-svg"
-                data-src="/icons/arrow-left-01-stroke-sharp.svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                role="img"
-                color="#000000"
-          >
-            <path
-              d="M15 6L9 12L15 18"
-              stroke="#ffffff"
-              stroke-width="1.5"
-              stroke-miterlimit="16"
+      <!-- right-side section  -->
+      <div class="right bg-grey rounded">
+        <div class="header">
+          <div class="nav">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="injected-svg"
+              data-src="/icons/arrow-left-01-stroke-sharp.svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              role="img"
+              color="#000000"
+            >
+              <path
+                d="M15 6L9 12L15 18"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-miterlimit="16"
               ></path>
             </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            class="injected-svg"
-            data-src="/icons/arrow-right-01-stroke-sharp.svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            role="img"
-            color="#000000"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="injected-svg"
+              data-src="/icons/arrow-right-01-stroke-sharp.svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              role="img"
+              color="#000000"
             >
-            <path
-            d="M9.00005 6L15 12L9 18"
-            stroke="#ffffff"
-            stroke-width="1.5"
-              stroke-miterlimit="16"
-            ></path>
-          </svg>
+              <path
+                d="M9.00005 6L15 12L9 18"
+                stroke="#ffffff"
+                stroke-width="1.5"
+                stroke-miterlimit="16"
+              ></path>
+            </svg>
+          </div>
+          <div class="buttons">
+            <button class="signupbtn">Sign Up</button>
+            <button class="loginbtn">Login</button>
+          </div>
         </div>
-        <div class="buttons">
-          <button>Sign Up</button>
-          <button>Login</button>
-        </div>
-    </div>
 
-    <div class="SpotifyPlaylist">
-        <h1>Spotify Playlist</h1>
-        <div class="cardContainer">
+        <div class="SpotifyPlaylist">
+          <h1>Spotify Playlist</h1>
+          <div class="cardContainer">
             <div class="card">
-                <img src="https://i.scdn.co/image/ab67706f000000026de2f3f49773248113cb8794" alt="cover-page">
-                <h2>Wake Up Gently</h2>
-                <p>Wake up at your own pace with gentle piano music.</p>
+              <div class="play">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 20V4L19 12L5 20Z"
+                    stroke="#141B34"
+                    fill="#000"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67706f000000026de2f3f49773248113cb8794"
+                alt="cover-page"
+              />
+              <h2>Wake Up Gently</h2>
+              <p>Wake up at your own pace with gentle piano music.</p>
             </div>
             <div class="card">
-                <img src="https://i.scdn.co/image/ab67706f000000026de2f3f49773248113cb8794" alt="cover-page">
-                <h2>Wake Up Gently</h2>
-                <p>Wake up at your own pace with gentle piano music.</p>
+              <img
+                src="https://i.scdn.co/image/ab67706f000000026de2f3f49773248113cb8794"
+                alt="cover-page"
+              />
+              <h2>Wake Up Gently</h2>
+              <p>Wake up at your own pace with gentle piano music.</p>
             </div>
+          </div>
         </div>
-    </div>
+        <div class="playBar">
+          <div class="seekBar">
+            <div class="circle"></div>
+          </div>
+          <div class="abovebar">
+            <div class="songinfo"></div>
+            <div class="songsBtn">
+                <img id="previous" src="./assests/previousSong.svg" alt="">
+                <img  id="play" src="./assests/playSong.svg" alt="">
+                <img  id="next" src="./assests/nextSong.svg" alt="">
+            </div>   
+            <div class="songtime"></div>
+        </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
